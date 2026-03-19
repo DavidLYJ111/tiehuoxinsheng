@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-banner">
+    <div class="container">
+        <h2>数字平台</h2>
+        <p>构建集展示、教学、商城、社群互动于一体的“铁火云社”平台原型</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container split-layout">
+        <div class="text-block">
+            <h3>平台首页原型</h3>
+            <p>
+                平台承载品牌展示、非遗科普、产品购买、互动活动与用户共创等功能，
+                是连接项目内容与用户触达的重要入口。
+            </p>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/platform-ui.png') }}" alt="平台界面">
+        </div>
+    </div>
+</section>
+
+<section class="section alt-bg">
+    <div class="container split-layout reverse">
+        <div class="text-block">
+            <h3>铁火云社互助平台</h3>
+            <p>
+                除基础展示与商城外，平台还可延展到创作交流、用户互动、非遗学习、
+                活动组织与社群协作等层面，进一步增强项目的社区属性与持续运营能力。
+            </p>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/tiehuoyunsheshuzipingtai.png') }}" alt="铁火云社互助平台">
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h3>核心功能模块</h3>
+        </div>
+
+        <div class="card-grid four">
+            <div class="card">
+                <h4>非遗教学</h4>
+                <p>通过图文、短视频和课程模块提升大众认知与学习参与度。</p>
+            </div>
+            <div class="card">
+                <h4>在线商城</h4>
+                <p>支持文创、礼盒、收藏品等不同产品的展示、导购与销售转化。</p>
+            </div>
+            <div class="card">
+                <h4>社区互动</h4>
+                <p>构建作品分享、用户交流、活动参与和内容传播的互动空间。</p>
+            </div>
+            <div class="card">
+                <h4>共创传播</h4>
+                <p>结合直播、联名、活动与AR玩法扩大品牌影响力和社群参与度。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section alt-bg">
+    <div class="container image-grid three">
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/ar-demo.png') }}" alt="AR互动">
+            <div class="image-card-body">
+                <h4>AR互动体验</h4>
+                <p>增强产品内容表达，让非遗传播更具沉浸感和互动感。</p>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/live-stream.png') }}" alt="直播">
+            <div class="image-card-body">
+                <h4>直播传播</h4>
+                <p>拓宽展示和销售渠道，增强实时互动能力与转化效率。</p>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/brand-video.png') }}" alt="品牌内容">
+            <div class="image-card-body">
+                <h4>品牌内容输出</h4>
+                <p>通过短视频与视觉内容讲好铁画故事，构建持续传播的品牌形象。</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

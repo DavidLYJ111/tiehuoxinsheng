@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - 铁火新生</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="{{ url_for('index') }}" class="brand">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+                <div class="brand-text">
+                    <h1>铁火新生</h1>
+                    <p>让非遗成为触手可及的生活美学</p>
+                </div>
+            </a>
+
+            <nav class="nav">
+                <a href="{{ url_for('index') }}">首页</a>
+                <a href="{{ url_for('problem') }}">项目背景</a>
+                <a href="{{ url_for('products') }}">产品体系</a>
+                <a href="{{ url_for('tech') }}">技术创新</a>
+                <a href="{{ url_for('platform') }}">数字平台</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>合肥工业大学 · 铁火新生项目团队</p>
+            <p>非遗活化 · 材料创新 · 数字赋能</p>
+        </div>
+    </footer>
+</body>
+</html>

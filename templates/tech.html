@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-banner">
+    <div class="container">
+        <h2>技术创新</h2>
+        <p>从材料到工艺，再到业务体系，形成可持续的非遗创新路径</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container split-layout">
+        <div class="text-block">
+            <h3>材料工艺创新</h3>
+            <p>
+                项目围绕轻量化、耐久化和可持续方向，探索再生金属材料、
+                防锈处理与新型工艺路径，提高铁画产品在现代消费场景中的适配能力。
+            </p>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/material-process.png') }}" alt="材料工艺流程">
+        </div>
+    </div>
+</section>
+
+<section class="section alt-bg">
+    <div class="container split-layout reverse">
+        <div class="text-block">
+            <h3>低碳钢基材优化</h3>
+            <p>
+                通过对基材选择和处理方式进行优化，提升产品强度、稳定性与后续工艺适配能力，
+                为铁画从传统工艺品向现代文创和生活产品转化提供基础支撑。
+            </p>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/ditangangjicai.png') }}" alt="低碳钢基材">
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container split-layout">
+        <div class="text-block">
+            <h3>技术路线</h3>
+            <p>
+                从需求调研、产品方向设计、材料与工艺优化，到数字平台传播和市场转化，
+                构建起完整的项目落地路径。
+            </p>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/tech-route.png') }}" alt="技术路线">
+        </div>
+    </div>
+</section>
+
+<section class="section alt-bg">
+    <div class="container split-layout reverse">
+        <div class="text-block">
+            <h3>业务系统支撑</h3>
+            <p>
+                通过技术创新、品牌运营与数字平台三者协同，
+                推动铁画产品从单一工艺品向系统化品牌项目升级。
+            </p>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/business-system.png') }}" alt="业务体系">
+        </div>
+    </div>
+</section>
+{% endblock %}

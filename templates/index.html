@@ -1,0 +1,244 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <span class="tag">国家级非遗活化项目构想</span>
+            <h2>铁火新生</h2>
+            <p class="subtitle">让非遗成为触手可及的生活美学</p>
+            <p class="desc">
+                以材料创新、产品年轻化与数字平台赋能为核心，
+                推动芜湖铁画从传统工艺品走向生活化、可传播、可持续的当代非遗品牌。
+            </p>
+
+            <div class="hero-buttons">
+                <a class="btn btn-primary" href="{{ url_for('problem') }}">了解项目</a>
+                <a class="btn btn-outline" href="{{ url_for('platform') }}">进入平台</a>
+            </div>
+
+            <div class="hero-data">
+                <div class="data-pill">
+                    <strong>3 大</strong>
+                    <span>核心业务体系</span>
+                </div>
+                <div class="data-pill">
+                    <strong>3 层</strong>
+                    <span>产品矩阵覆盖</span>
+                </div>
+                <div class="data-pill">
+                    <strong>1 站式</strong>
+                    <span>数字云平台原型</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/home-hero.png') }}" alt="首页主视觉">
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h3>核心价值</h3>
+            <p>从工艺传承到商业转化，构建非遗创新的完整路径</p>
+        </div>
+
+        <div class="card-grid three">
+            <div class="card">
+                <h4>材料创新</h4>
+                <p>以轻量化、耐久化与环保导向优化传统铁画材料体系，增强产品落地能力。</p>
+            </div>
+            <div class="card">
+                <h4>产品年轻化</h4>
+                <p>以文创、家居、礼赠和收藏等多元场景切入，拓宽铁画的当代生活应用。</p>
+            </div>
+            <div class="card">
+                <h4>数字平台赋能</h4>
+                <p>通过“铁火云社”连接展示、教学、购买、传播与社群互动，增强用户黏性。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section alt-bg">
+    <div class="container">
+        <div class="section-title">
+            <h3>三大产品系列</h3>
+            <p>覆盖年轻消费、生活美学与高端收藏三类核心场景</p>
+        </div>
+
+        <div class="series-grid">
+            <div class="series-card">
+                <img src="{{ url_for('static', filename='images/xinsheng.png') }}" alt="新生系列">
+                <div class="content">
+                    <h4>轻语·新生系列</h4>
+                    <p>聚焦轻量化、年轻化与入门级文创体验，适合礼赠、校园与文旅消费。</p>
+                </div>
+            </div>
+
+            <div class="series-card">
+                <img src="{{ url_for('static', filename='images/wanxiang.png') }}" alt="万象系列">
+                <div class="content">
+                    <h4>万象·生活系列</h4>
+                    <p>以家居、办公与实用美学为主，让非遗不止于收藏，也能进入日常生活。</p>
+                </div>
+            </div>
+
+            <div class="series-card">
+                <img src="{{ url_for('static', filename='images/zhencang.png') }}" alt="珍藏系列">
+                <div class="content">
+                    <h4>永恒·珍藏系列</h4>
+                    <p>强调定制、纪念与收藏价值，面向高端礼赠与文化审美型消费群体。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h3>项目亮点展示</h3>
+            <p>以产品、传播与场景化设计共同构建品牌触达路径</p>
+        </div>
+
+        <div class="image-grid three">
+            <div class="image-card">
+                <img src="{{ url_for('static', filename='images/blindbox.png') }}" alt="盲盒">
+                <div class="image-card-body">
+                    <h4>IP盲盒文创</h4>
+                    <p>以“名山铁画”等形式提升产品趣味性、收藏性与年轻化传播能力。</p>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="{{ url_for('static', filename='images/campus-event.png') }}" alt="校园活动">
+                <div class="image-card-body">
+                    <h4>校园活动推广</h4>
+                    <p>通过宣讲、体验和互动展示增强年轻人对非遗的感知、参与和认同。</p>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="{{ url_for('static', filename='images/gift-box.png') }}" alt="礼盒">
+                <div class="image-card-body">
+                    <h4>场景化礼赠设计</h4>
+                    <p>赋予铁画更强的节庆、文旅、纪念与商务礼赠价值。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section alt-bg">
+    <div class="container split-layout">
+        <div class="text-block">
+            <h3>品牌服务矩阵</h3>
+            <p>
+                除产品开发外，项目还可延展为品牌视觉、传播内容、文旅礼赠、
+                教学体验、活动策划等综合服务体系，形成更强的商业闭环。
+            </p>
+            <p>
+                这部分特别适合比赛答辩时用来说明：我们做的不是单一产品，而是一套非遗品牌化解决方案。
+            </p>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/pinpaifuwujuzheng.png') }}" alt="品牌服务矩阵">
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h3>宣传与包装延展</h3>
+            <p>从包装、宣传册到海报，进一步完善品牌视觉传播体系</p>
+        </div>
+
+        <div class="showcase-strip">
+            <div class="showcase-mini">
+                <img src="{{ url_for('static', filename='images/chanpinbaozhuang.png') }}" alt="产品包装">
+                <p>产品包装设计</p>
+            </div>
+            <div class="showcase-mini">
+                <img src="{{ url_for('static', filename='images/xuanchuance.png') }}" alt="宣传册">
+                <p>品牌宣传册</p>
+            </div>
+            <div class="showcase-mini">
+                <img src="{{ url_for('static', filename='images/xuanchuanhaibao.png') }}" alt="宣传海报">
+                <p>线下传播海报</p>
+            </div>
+            <div class="showcase-mini">
+                <img src="{{ url_for('static', filename='images/lihe2.png') }}" alt="礼盒补充">
+                <p>礼盒方案延展</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section dark-panel">
+    <div class="container split-layout">
+        <div class="text-block">
+            <h3>数字平台原型</h3>
+            <p>
+                平台集非遗教学、在线展示、商城交易、互动传播于一体，
+                支撑“产品—用户—内容—社群”的持续连接。
+            </p>
+            <p>
+                通过“铁火云社”平台，可承载课程体验、作品展示、产品交易、
+                用户互动与品牌内容传播等多重功能。
+            </p>
+            <a class="btn btn-light" href="{{ url_for('platform') }}">查看平台页面</a>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/platform-ui.png') }}" alt="平台UI">
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container image-grid three">
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/ar-demo.png') }}" alt="AR互动">
+            <div class="image-card-body">
+                <h4>AR互动体验</h4>
+                <p>增强产品内容表达，让非遗传播更具沉浸感与参与感。</p>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/live-stream.png') }}" alt="直播">
+            <div class="image-card-body">
+                <h4>直播传播</h4>
+                <p>拓宽展示和销售渠道，增强实时互动能力与传播转化效率。</p>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/brand-video.png') }}" alt="品牌内容">
+            <div class="image-card-body">
+                <h4>品牌内容输出</h4>
+                <p>通过视觉内容与短视频讲好铁画故事，形成持续的品牌记忆点。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section alt-bg">
+    <div class="container split-layout reverse">
+        <div class="text-block">
+            <h3>专家背书与指导支持</h3>
+            <p>
+                专家、教师与跨学科指导资源，能够提升项目在材料、工艺、品牌、
+                商业策划与非遗传播层面的专业性和可信度。
+            </p>
+        </div>
+        <div class="image-block">
+            <img src="{{ url_for('static', filename='images/professor(zhuanjia).png') }}" alt="专家指导">
+        </div>
+    </div>
+</section>
+{% endblock %}
